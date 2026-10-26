@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;   
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #222;
+    width: 100%; 
+    min-height: 100dvh;
+}
+
+.navBar{
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    padding: 0 5rem; 
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #222;
+    z-index: 100; 
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.navLinks nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navLinks li{
+    list-style: none;
+    transition: 0.4s ease;
+    padding: 0.5rem;
+}
+
+.navLinks a {
+    color: #222;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.navLinks li:hover {
+    background-color: #222;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    transition: 0.4s ease;
+}
+
+.navLinks li a:hover {
+    color: white;
+}
+
+.color-mode{
+    border: none;
+    background-color: transparent;
+    color: #222;
+    padding: 0.5rem;
+    transition: 0.3s ease;
+}
+
+.color-mode:hover{
+    background-color: #222;
+    color: white;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+}
+
+section {
+    width: 100%;
+    min-height: 100dvh; 
+    padding: 0 5rem;   
+}
+
+.home{
+    width: 100%;
+    height: 100dvh; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home h1{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.home p{
+   margin: 1rem 0;
+}
+
+.homeLeft{
+    flex: 1;
+}
+
+.homeLeft span{
+    color: #28707C;
+    margin-bottom: 2rem;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.profile img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #222;
+    box-shadow: 0 0 2rem 0 #222222b8;
+}
+
+.skillsBtn{
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #28707C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    transition: 0.3s ease;
+}
+
+.buttonBox{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    gap: 1rem;
+}
+
+.contactBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    color: #28707C;
+    border: none;
+    border-bottom: 0.1rem solid #28707c;
+    padding-bottom: 0.2rem;
+    transition: 0.3s ease;
+}
+.contactBtn svg,
+.skillsBtn svg{
+    transition: 0.3s ease;
+}
+
+
+.skillsBtn:hover svg{
+    transition: 0.3s ease;
+    transform: translateY(-0.2rem) translateX(0.3rem);
+}
+
+.skillsBtn:hover{
+    transition: 0.3s ease;
+    transform: translateY(-0.2rem);
+}
+
+.contactBtn:hover svg{
+    transition: 0.3s ease;
+    transform: translateY(0.2rem) translateX(0.3rem);
+}
+
+
+
+#about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center; 
+    gap: 2rem;
+}
+
+.aboutLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start; 
+}
+
+.aboutLeft h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.aboutRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem;
+    background-color: #FDFCFA;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.426);
+}
+
+.hobbyList{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.hobbyList li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    width: 25rem;
+    border-bottom: 1px solid #F1F1EF;
+    color: #355168;
+    font-weight: bold;
+}
+
+
+
+.hobbyList li svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #355168;
+}
+
+
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 4rem;
+}
+
+.chtml{
+    fill: #F06836;
+}
+.ccss{
+    fill: #3967F2;
+}
+.cjs{
+    fill: #F4CF1C;  
+}
+.cpython{
+    fill: #2481D7;
+}
+.cpython img{
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.3rem;
+}
+.cdatabase{
+    fill: #7A5BC7;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    width: 120px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #aaa;
+    transition: transform 0.2s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.177);
+}
+
+.contact h1{
+    margin-bottom: 3rem;
+}
+
+input, textarea {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 100px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.dark {
+    background-color: #222;
+    color: white;
+}
+
+.dark .navBar, 
+.dark .navLinks a, 
+.dark .color-mode {
+    color: white; 
+}
+
+.dark .navLinks li:hover,
+.dark .color-mode:hover {
+    background-color: white;
+    color: #222;
+}
+
+.dark .navLinks li a:hover {
+    color: #222;
+}
+
+.dark .about-box,
+.dark .card,
+.dark form {
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #about, .home {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 6rem; 
+    }
+    
+    .navBar, section {
+        padding: 0 1.5rem; 
+    }
+    
+    .profile img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+}
